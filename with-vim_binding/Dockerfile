@@ -7,3 +7,5 @@ RUN pip install jupyter_contrib_nbextensions && \
     git clone https://github.com/lambdalisue/jupyter-vim-binding /home/jovyan/.local/share/jupyter/nbextensions/vim_binding && \
     pip install sympy numpy pandas matplotlib && \
     jupyter nbextension enable vim_binding/vim_binding
+
+COPY jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
